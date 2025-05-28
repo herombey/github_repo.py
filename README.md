@@ -29,7 +29,7 @@ python github_wordlist.py -i <github_repo> -o <output_file> [--dirs-only] [--tok
 
 All files and folders:
 ```sh
-python github_wordlist.py -i n8n-io/n8n -o wordlist.txt
+python github_wordlist.py -i htts://github.com/something/folder/ -o wordlist.txt
 ```
 
 Directories only:
@@ -39,13 +39,7 @@ python github_wordlist.py -i https://github.com/something/other -o dirlist.txt -
 
 Using a GitHub Token (recommended for large repos):
 ```sh
-python github_wordlist.py -i n8n-io/n8n -o wordlist.txt --token ghp_yourtokenhere
-```
-
-Or set your token as an environment variable:
-```sh
-export GITHUB_TOKEN=ghp_yourtokenhere
-python github_wordlist.py -i n8n-io/n8n -o wordlist.txt
+python github_wordlist.py -i htts://github.com/something/folder/ -o wordlist.txt --token ghp_yourtokenhere
 ```
 
 ### Notes
